@@ -1,0 +1,25 @@
+.contactPage {
+  background-color: #f5f5f5;
+  background-size: cover;
+  height: 100vh;
+  text-align: left;
+  font-size: 1.5em;
+  position: relative;
+}
+
+.contactInfo {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.contactInfo a {
+  text-decoration: none;
+  color: #d56c68;
+  border-bottom: 1px dotted #595959;
+}
+
+@media only screen and (max-width: 500px) {
+  .contactPage {
+    height: 125vh;
+  }
+}

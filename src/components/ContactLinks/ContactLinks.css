@@ -1,0 +1,99 @@
+.contactCol {
+  text-align: center;
+}
+
+
+
+.icon {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  margin: 4px;
+  margin-top: 60px;
+  width: 80px;
+  height: 80px;
+  font-size: 0;
+  text-indent: -9999px;
+}
+
+.iconCube {
+  position: relative;
+  perspective: 800px;
+  overflow: visible;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.iconCube::before,
+.iconCube::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../../images/icons5.png");
+  background-image: url("../../images/icons5.svg"), none;
+  content: "";
+  transition: all 0.3s;
+}
+
+.iconCube::before {
+  z-index: 2;
+  background-color: #595959;
+}
+
+.iconCube::after {
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(48px) rotateX(-90deg);
+}
+
+.iconCube:hover::before {
+  opacity: 0;
+  transform: translateY(-48px) rotateX(90deg);
+}
+
+.iconCube:hover::after {
+  opacity: 1;
+	transform: rotateX(0);
+}
+
+/* facebook */
+.iconCube.facebook::before,
+.iconCube.facebook::after {
+  background-position: 0 0;
+}
+
+.iconCube.facebook::after {
+  background-color: #3b5998;
+}
+
+/* twitter */
+.iconCube.twitter::before,
+.iconCube.twitter::after {
+  background-position: -96px 0;
+}
+
+.iconCube.twitter::after {
+  background-color: #4099ff;
+}
+
+/* google plus */
+.iconCube.googleplus::before,
+.iconCube.googleplus::after {
+  background-position: -192px 0;
+}
+
+.iconCube.googleplus::after {
+  background-color: #d34836;
+}
+
+/* github */
+.iconCube.github::before,
+.iconCube.github::after {
+  background-position: -288px 0;
+}
+
+.iconCube.github::after {
+  background-color: #333333;
+}
