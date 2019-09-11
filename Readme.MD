@@ -1,4 +1,4 @@
-# My personal website - [VGoutham.com](http://www.vgoutham.com)
+# My personal website - [Mintewab.com](https://mintewab-demissiew.herokuapp.com/)
 
 Built in React, hosted on Amazon S3 with Route 53 for DNS
 
